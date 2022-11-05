@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <!--Creates html document -->
+<!-- Start of head tag -->
+    <head>
+    <title> Rotating Rat </title>
+    <!--Sets the webpage's title -->
+    <!--Start of style tag-->
+    <style>
+        /*Contains syling information for the body tag*/
+       body {
+        /*Sets background color to a pale beige color*/
+        background-color: bisque;
+       }
+       /*Contains styling information for the button tag*/
+       button {
+        /*Increases the width and height of the button*/
+        width: 100px;
+        height: 50px;
+        /*Makes the border more rounded*/
+        border-radius: 10px;
+        /*Makes the border thickness 5 pixels*/
+        border-width: 5px;
+        /*Changes the border color to a brown color*/
+        border-color: brown;
+        /*Changes the background color of the button to light pink*/
+        background-color:lightpink;
+        /*Bolds and increases the text inside the button*/
+        font-weight: bolder;
+        font-size: 20px;
+       }
+       /*Contains special styling information for the button tag only when it is hovered over with the mouse*/
+       button:hover {
+        /*Most attributes here are the same as the normal button styling*/
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        border-width: 5px;
+        border-color: brown;
+
+        background-color: brown;
+        /*But the background color is set to brown instead of light pink*/
+
+        font-weight: bolder;
+        font-size: 20px;
+       }
+       /*Contains styling information for all images and gifs*/
+       img {
+        /*The default state of the image is set to be invisible*/
+        display:none;
+        /*Centers the image by using the auto margin method*/
+        margin-left: auto;
+        margin-right: auto;
+        /*Increases the size of the image proportional to its width*/
+        width:800px;
+       }
+    </style>
+    <!--End of style tag-->
+    <!--Script tag holds external javascript-->
+    <script src="Event.js"></script>
+<!-- End of head tag -->
+</head>
+
+<!-- Start of body tag -->
+<body>
+    <!--h1 tag used for the webpage heading. Uses inline CSS for styling-->
+    <h1 style ="text-align: center; font-size: 80px;"> Rotating Rat </h1>
+    <!--The on button has manually set margins meant to make it look like both buttons are centered-->
+    <button style="margin-left: 45%;" onclick="onButton()"> Start </button>
+    <!--The off button is inline with the on button-->
+    <button onclick="offButton()"> Stop </button>
+    <!--Line breaks-->
+    <br><br><br>
+    <!--The image tag contains the spinning rat gif, with the id of 'gif' to be referenced in the JS-->
+    <img src="Spinning_Rat.gif" alt="Spinning-Rat.gif" id="gif">
+    <audio id="freeBird"> 
+        <source src="GuitarSolo.mp3">
+    </audio>
+</body>
+<!-- End of body tag -->
+<!-- End of HTML document -->
+</html>
